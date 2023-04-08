@@ -8,8 +8,8 @@
         "lint": "prettier --write ."
     },
     "engines": {
-        "node": ">=12.5.0",
-        "yarn": ">=3.5.0"
+        "node": ">=16.15.1",
+        "yarn": ">=1.22.19"
     },
     "repository": {
         "type": "git",

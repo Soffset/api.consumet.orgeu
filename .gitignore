@@ -4,3 +4,6 @@ yarn-error.log
 src/scripts
 .vscode
 .yarn/cache/
+yarn.lock
+test.ts
+dist

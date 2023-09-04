@@ -5,16 +5,16 @@ __metadata:
   version: 6
   cacheKey: 8
 
-"@consumet/extensions@https://github.com/consumet/consumet.ts.git":
-  version: 1.4.18
-  resolution: "@consumet/extensions@https://github.com/consumet/consumet.ts.git#commit=4290d408de2a344d96e28370f412c4eacee559af"
+"@consumet/extensions@https://github.com/consumet/consumet.ts.git#commit=5d3286cabfcc1247727bf55504d072b918b927ff":
+  version: 1.5.1
+  resolution: "@consumet/extensions@https://github.com/consumet/consumet.ts.git#commit=5d3286cabfcc1247727bf55504d072b918b927ff"
   dependencies:
     ascii-url-encoder: ^1.2.0
     axios: ^0.27.2
     cheerio: 1.0.0-rc.12
     crypto-js: ^4.1.1
     form-data: ^4.0.0
-  checksum: c57a83b2d0bb6a8809bd34b3a4ae6a094746c1ed7553e30f12bbb96242ad8b6dcd37dcfee82ab37b034281c2a0f31a81191d01c8c17412ad741b89e790c545e6
+  checksum: 170003b9c68520285584e7d9e379e86cb262f8b458fff2572d723ad62b38ddfae73f0838a67d7c499a9e8e11a6790c1df29e024824c6cfceafdb7f2ccebb5437
   languageName: node
   linkType: hard
 
@@ -38,13 +38,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fastify/cors@npm:^8.2.0":
-  version: 8.2.1
-  resolution: "@fastify/cors@npm:8.2.1"
+"@fastify/cors@npm:^8.3.0":
+  version: 8.3.0
+  resolution: "@fastify/cors@npm:8.3.0"
   dependencies:
     fastify-plugin: ^4.0.0
     mnemonist: 0.39.5
-  checksum: 219edf11ad8397c7c00ac605c2c084f7dd929a13d95255013612275d195971bd23de1a8cf23304ded8bbe0066e2ea3c7f3c5b7ee0b14af2daed2071f0ed5609a
+  checksum: f487b5a8823264c3db58e99df020e38ada524514d60f2c5c2e01b994519545e2fc9481006d98e485b40e536b9b89f72af9061d9377b8e93f6ce07b14d40164a2
   languageName: node
   linkType: hard
 
@@ -55,10 +55,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fastify/error@npm:^3.0.0":
-  version: 3.2.0
-  resolution: "@fastify/error@npm:3.2.0"
-  checksum: e538ef76fd2dedd0584691e0c891997321a2050092b11089a70090f5a0edab0dc8ab069747aa6025782280824e2348548e051c8e77558baec699bd44e581e187
+"@fastify/error@npm:^3.2.0":
+  version: 3.3.0
+  resolution: "@fastify/error@npm:3.3.0"
+  checksum: 202507c8c7f49922cac2f5afc82802151b0bd9c583ca1c2850bf43d0f4cd97eedb3a3388b9016da74f8a01b517a5861d1f666c506dd64fd22995e559bc139264
   languageName: node
   linkType: hard
 
@@ -180,19 +180,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^18.11.17":
-  version: 18.16.13
-  resolution: "@types/node@npm:18.16.13"
-  checksum: ec1ffb814750fc7f7c6c7cb138ed56f24cb23a2ffe50d264a265be52b5cafca37b94b8fb3b5b420f5674baa677b0e011160aeaa1a0edd862aa4cfa11f4467918
+"@types/node@npm:^18.17.14":
+  version: 18.17.14
+  resolution: "@types/node@npm:18.17.14"
+  checksum: f96ce1e588426a26cf82440193084f8bbab47bfb3c2e668cf174095f99ce808a20654b2137448c7e88cfd7b6c2b8521ffb6f714f521b3502ac595a0df0bff679
   languageName: node
   linkType: hard
 
-"@types/ws@npm:^8.5.3":
-  version: 8.5.4
-  resolution: "@types/ws@npm:8.5.4"
+"@types/ws@npm:^8.5.5":
+  version: 8.5.5
+  resolution: "@types/ws@npm:8.5.5"
   dependencies:
     "@types/node": "*"
-  checksum: fefbad20d211929bb996285c4e6f699b12192548afedbe4930ab4384f8a94577c9cd421acaad163cacd36b88649509970a05a0b8f20615b30c501ed5269038d1
+  checksum: d00bf8070e6938e3ccf933010921c6ce78ac3606696ce37a393b27a9a603f7bd93ea64f3c5fa295a2f743575ba9c9a9fdb904af0f5fe2229bf2adf0630386e4a
   languageName: node
   linkType: hard
 
@@ -321,24 +321,24 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "api.consumet.org@workspace:."
   dependencies:
-    "@consumet/extensions": "https://github.com/consumet/consumet.ts.git"
-    "@fastify/cors": ^8.2.0
+    "@consumet/extensions": "https://github.com/consumet/consumet.ts.git#commit=5d3286cabfcc1247727bf55504d072b918b927ff"
+    "@fastify/cors": ^8.3.0
     "@types/fastify-cors": ^2.1.0
-    "@types/node": ^18.11.17
-    "@types/ws": ^8.5.3
+    "@types/node": ^18.17.14
+    "@types/ws": ^8.5.5
     axios: ^0.27.2
     chalk: 4.1.2
     cheerio: 1.0.0-rc.12
-    dotenv: ^16.0.3
-    fastify: ^4.10.2
+    dotenv: ^16.3.1
+    fastify: ^4.22.2
     fastify-cors: ^6.1.0
-    ioredis: ^5.2.4
-    nodemon: 2.0.20
-    prettier: ^2.8.1
+    ioredis: ^5.3.2
+    nodemon: 2.0.22
+    prettier: ^2.8.8
     reconnecting-websocket: ^4.4.0
     ts-node: ^10.9.1
-    typescript: 5.0.2
-    ws: ^8.8.1
+    typescript: 5.2.2
+    ws: ^8.13.0
   languageName: unknown
   linkType: soft
 
@@ -394,7 +394,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"avvio@npm:^8.2.0":
+"avvio@npm:^8.2.1":
   version: 8.2.1
   resolution: "avvio@npm:8.2.1"
   dependencies:
@@ -769,10 +769,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dotenv@npm:^16.0.3":
-  version: 16.0.3
-  resolution: "dotenv@npm:16.0.3"
-  checksum: afcf03f373d7a6d62c7e9afea6328e62851d627a4e73f2e12d0a8deae1cd375892004f3021883f8aec85932cd2834b091f568ced92b4774625b321db83b827f8
+"dotenv@npm:^16.3.1":
+  version: 16.3.1
+  resolution: "dotenv@npm:16.3.1"
+  checksum: 15d75e7279018f4bafd0ee9706593dd14455ddb71b3bcba9c52574460b7ccaf67d5cf8b2c08a5af1a9da6db36c956a04a1192b101ee102a3e0cf8817bbcf3dfd
   languageName: node
   linkType: hard
 
@@ -919,27 +919,27 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fastify@npm:^4.10.2":
-  version: 4.17.0
-  resolution: "fastify@npm:4.17.0"
+"fastify@npm:^4.22.2":
+  version: 4.22.2
+  resolution: "fastify@npm:4.22.2"
   dependencies:
     "@fastify/ajv-compiler": ^3.5.0
-    "@fastify/error": ^3.0.0
+    "@fastify/error": ^3.2.0
     "@fastify/fast-json-stringify-compiler": ^4.3.0
     abstract-logging: ^2.0.1
-    avvio: ^8.2.0
+    avvio: ^8.2.1
     fast-content-type-parse: ^1.0.0
     fast-json-stringify: ^5.7.0
     find-my-way: ^7.6.0
-    light-my-request: ^5.6.1
-    pino: ^8.5.0
-    process-warning: ^2.0.0
+    light-my-request: ^5.9.1
+    pino: ^8.12.0
+    process-warning: ^2.2.0
     proxy-addr: ^2.0.7
     rfdc: ^1.3.0
     secure-json-parse: ^2.5.0
-    semver: ^7.3.7
+    semver: ^7.5.0
     tiny-lru: ^11.0.1
-  checksum: 919018b384485452ad2100b172080a266327bdb89c68dbebb8443cc2352efe96fb3d1225d2924b1ca8f06175d5478fee5c18c8857fe6981b8c39328182ff48a1
+  checksum: 495c816a106548d0cf18fb379c5b06de7eecfb79a373d490e341c9f12297e378b3005ef4a36f0cbaccdf8ca818c6ff91832f4ade17726e68d43a0c6e7bc49810
   languageName: node
   linkType: hard
 
@@ -1225,7 +1225,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ioredis@npm:^5.2.4":
+"ioredis@npm:^5.3.2":
   version: 5.3.2
   resolution: "ioredis@npm:5.3.2"
   dependencies:
@@ -1316,14 +1316,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"light-my-request@npm:^5.6.1":
-  version: 5.9.1
-  resolution: "light-my-request@npm:5.9.1"
+"light-my-request@npm:^5.9.1":
+  version: 5.10.0
+  resolution: "light-my-request@npm:5.10.0"
   dependencies:
     cookie: ^0.5.0
     process-warning: ^2.0.0
     set-cookie-parser: ^2.4.1
-  checksum: d501924ed3b4e04819145d6577c778a04573305762d6e6e8606307e6253a77a5c71e0ca60d79f37b76232d7cb9ccda11d47ca9969ee5934ca69179c7ee97c07f
+  checksum: 50450afd155c8a8800435d568b118ea24b0367d36defaf0467fc49f5e7591c3f8c90b97641f67792d3f25190d53c988c6bc03dd389dfec9dcdfd1907f01ff36f
   languageName: node
   linkType: hard
 
@@ -1558,9 +1558,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nodemon@npm:2.0.20":
-  version: 2.0.20
-  resolution: "nodemon@npm:2.0.20"
+"nodemon@npm:2.0.22":
+  version: 2.0.22
+  resolution: "nodemon@npm:2.0.22"
   dependencies:
     chokidar: ^3.5.2
     debug: ^3.2.7
@@ -1574,7 +1574,7 @@ __metadata:
     undefsafe: ^2.0.5
   bin:
     nodemon: bin/nodemon.js
-  checksum: 9fe858682414fe703179f4fe36c86e71f40d2693b5345c09803d7b191816a6589c5df8f1f9873bffee92893880183b95a031c86340e46b364ef1b0b7f619edbf
+  checksum: 9c987e139748f5b5c480c6c9080bdc97304ee7d29172b7b3da1a7db590b1323ad57b96346304e9b522b0e445c336dc393ccd3f9f45c73b20d476d2347890dcd0
   languageName: node
   linkType: hard
 
@@ -1710,9 +1710,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pino@npm:^8.5.0":
-  version: 8.14.1
-  resolution: "pino@npm:8.14.1"
+"pino@npm:^8.12.0":
+  version: 8.15.0
+  resolution: "pino@npm:8.15.0"
   dependencies:
     atomic-sleep: ^1.0.0
     fast-redact: ^3.1.1
@@ -1727,11 +1727,11 @@ __metadata:
     thread-stream: ^2.0.0
   bin:
     pino: bin.js
-  checksum: 72dcae8f550d375695bb8745f11b30c42aaa20d0bcab8f546ca5af0684d784453850949fe1b244206793e813a46d72cbbf0dda8aed2cee86e9491ba44a643e3e
+  checksum: 9a54d0757f0256201fad01346be1c18b0a4378704fa383df867189da12151d664d2bd18b1e53df70633fbff6c90fd3175228c0c971eaaa734939709cc1a0005b
   languageName: node
   linkType: hard
 
-"prettier@npm:^2.8.1":
+"prettier@npm:^2.8.8":
   version: 2.8.8
   resolution: "prettier@npm:2.8.8"
   bin:
@@ -1747,7 +1747,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"process-warning@npm:^2.0.0":
+"process-warning@npm:^2.0.0, process-warning@npm:^2.2.0":
   version: 2.2.0
   resolution: "process-warning@npm:2.2.0"
   checksum: 394ae451c2622ee7d014a7196d36658fc1a5d5cc9f3bfeb54aadd5b77fcfecc89a30a25db259ae76ff49fde3f3f3dd7031dcdfb4da2e5445dac795549352e5d0
@@ -1963,7 +1963,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semver@npm:^7.3.5, semver@npm:^7.3.7":
+"semver@npm:^7.3.5":
   version: 7.5.1
   resolution: "semver@npm:7.5.1"
   dependencies:
@@ -1971,6 +1971,17 @@ __metadata:
   bin:
     semver: bin/semver.js
   checksum: d16dbedad53c65b086f79524b9ef766bf38670b2395bdad5c957f824dcc566b624988013564f4812bcace3f9d405355c3635e2007396a39d1bffc71cfec4a2fc
+  languageName: node
+  linkType: hard
+
+"semver@npm:^7.5.0":
+  version: 7.5.4
+  resolution: "semver@npm:7.5.4"
+  dependencies:
+    lru-cache: ^6.0.0
+  bin:
+    semver: bin/semver.js
+  checksum: 12d8ad952fa353b0995bf180cdac205a4068b759a140e5d3c608317098b3575ac2f1e09182206bf2eb26120e1c0ed8fb92c48c592f6099680de56bb071423ca3
   languageName: node
   linkType: hard
 
@@ -2208,23 +2219,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:5.0.2":
-  version: 5.0.2
-  resolution: "typescript@npm:5.0.2"
+"typescript@npm:5.2.2":
+  version: 5.2.2
+  resolution: "typescript@npm:5.2.2"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: bef1dcd166acfc6934b2ec4d72f93edb8961a5fab36b8dd2aaf6f4f4cd5c0210f2e0850aef4724f3b4913d5aef203a94a28ded731b370880c8bcff7e4ff91fc1
+  checksum: 7912821dac4d962d315c36800fe387cdc0a6298dba7ec171b350b4a6e988b51d7b8f051317786db1094bd7431d526b648aba7da8236607febb26cf5b871d2d3c
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@5.0.2#~builtin<compat/typescript>":
-  version: 5.0.2
-  resolution: "typescript@patch:typescript@npm%3A5.0.2#~builtin<compat/typescript>::version=5.0.2&hash=b5f058"
+"typescript@patch:typescript@5.2.2#~builtin<compat/typescript>":
+  version: 5.2.2
+  resolution: "typescript@patch:typescript@npm%3A5.2.2#~builtin<compat/typescript>::version=5.2.2&hash=77c9e2"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 0411be9e19bf6a547d574b3261fa8598f55a5243123f2a50a79b0dc15a017abbf541f15b8b43331294e409cc978e548ac5ae4e0c5b98ba5ae98029304de047be
+  checksum: 07106822b4305de3f22835cbba949a2b35451cad50888759b6818421290ff95d522b38ef7919e70fb381c5fe9c1c643d7dea22c8b31652a717ddbd57b7f4d554
   languageName: node
   linkType: hard
 
@@ -2310,7 +2321,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ws@npm:^8.8.1":
+"ws@npm:^8.13.0":
   version: 8.13.0
   resolution: "ws@npm:8.13.0"
   peerDependencies:

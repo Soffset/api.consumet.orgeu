@@ -22,26 +22,26 @@
     },
     "homepage": "https://github.com/consumet/consumet.ts#readme",
     "dependencies": {
-        "@consumet/extensions": "https://github.com/consumet/consumet.ts.git",
-        "@fastify/cors": "^8.2.0",
+        "@consumet/extensions": "https://github.com/consumet/consumet.ts.git#commit=5d3286cabfcc1247727bf55504d072b918b927ff",
+        "@fastify/cors": "^8.3.0",
         "@types/fastify-cors": "^2.1.0",
-        "@types/node": "^18.11.17",
-        "@types/ws": "^8.5.3",
+        "@types/node": "^18.17.14",
+        "@types/ws": "^8.5.5",
         "axios": "^0.27.2",
         "chalk": "4.1.2",
         "cheerio": "1.0.0-rc.12",
-        "dotenv": "^16.0.3",
-        "fastify": "^4.10.2",
+        "dotenv": "^16.3.1",
+        "fastify": "^4.22.2",
         "fastify-cors": "^6.1.0",
-        "ioredis": "^5.2.4",
+        "ioredis": "^5.3.2",
         "reconnecting-websocket": "^4.4.0",
         "ts-node": "^10.9.1",
-        "typescript": "5.0.2",
-        "ws": "^8.8.1"
+        "typescript": "5.2.2",
+        "ws": "^8.13.0"
     },
     "devDependencies": {
-        "nodemon": "2.0.20",
-        "prettier": "^2.8.1"
+        "nodemon": "2.0.22",
+        "prettier": "^2.8.8"
     },
     "packageManager": "yarn@3.5.0"
 }

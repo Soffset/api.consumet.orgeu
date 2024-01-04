@@ -5,16 +5,16 @@ __metadata:
   version: 6
   cacheKey: 8
 
-"@consumet/extensions@https://github.com/consumet/consumet.ts.git#commit=5d3286cabfcc1247727bf55504d072b918b927ff":
-  version: 1.5.1
-  resolution: "@consumet/extensions@https://github.com/consumet/consumet.ts.git#commit=5d3286cabfcc1247727bf55504d072b918b927ff"
+"@consumet/extensions@github:consumet/consumet.ts":
+  version: 1.5.5
+  resolution: "@consumet/extensions@https://github.com/consumet/consumet.ts.git#commit=266da4f33e47c314afad18ad101e4d163de9cafe"
   dependencies:
     ascii-url-encoder: ^1.2.0
     axios: ^0.27.2
     cheerio: 1.0.0-rc.12
     crypto-js: ^4.1.1
     form-data: ^4.0.0
-  checksum: 170003b9c68520285584e7d9e379e86cb262f8b458fff2572d723ad62b38ddfae73f0838a67d7c499a9e8e11a6790c1df29e024824c6cfceafdb7f2ccebb5437
+  checksum: 639b3f8b8d0d8511033f27941c4df87119e78b16819df2e688310e265a2bec7d43d37206e21bdf996867640919dfd5500e9af60426d85519a08d275e427f20dd
   languageName: node
   linkType: hard
 
@@ -38,13 +38,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fastify/cors@npm:^8.3.0":
-  version: 8.3.0
-  resolution: "@fastify/cors@npm:8.3.0"
+"@fastify/cors@npm:^8.2.0":
+  version: 8.5.0
+  resolution: "@fastify/cors@npm:8.5.0"
   dependencies:
     fastify-plugin: ^4.0.0
-    mnemonist: 0.39.5
-  checksum: f487b5a8823264c3db58e99df020e38ada524514d60f2c5c2e01b994519545e2fc9481006d98e485b40e536b9b89f72af9061d9377b8e93f6ce07b14d40164a2
+    mnemonist: 0.39.6
+  checksum: b8adf78fa0c1f2ecbffe644dfda148f57f7e9c3c815de3eb6fd90ff359486d372f275c696db3c4f6441b0864e7427c1b7d8a307582a31925bddf21087a943c18
   languageName: node
   linkType: hard
 
@@ -180,19 +180,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^18.17.14":
-  version: 18.17.14
-  resolution: "@types/node@npm:18.17.14"
-  checksum: f96ce1e588426a26cf82440193084f8bbab47bfb3c2e668cf174095f99ce808a20654b2137448c7e88cfd7b6c2b8521ffb6f714f521b3502ac595a0df0bff679
+"@types/node@npm:^18.11.17":
+  version: 18.19.4
+  resolution: "@types/node@npm:18.19.4"
+  dependencies:
+    undici-types: ~5.26.4
+  checksum: 3a32a31b2df85d4bebb5e3c91ec1a0908d587a2a2fd31ab4eeebd609d1c04bbcc9ba97e290e3230f843c9f43f17efb9f5cde56412b4b0f5acbfe5577179b23c8
   languageName: node
   linkType: hard
 
-"@types/ws@npm:^8.5.5":
-  version: 8.5.5
-  resolution: "@types/ws@npm:8.5.5"
+"@types/ws@npm:^8.5.3":
+  version: 8.5.10
+  resolution: "@types/ws@npm:8.5.10"
   dependencies:
     "@types/node": "*"
-  checksum: d00bf8070e6938e3ccf933010921c6ce78ac3606696ce37a393b27a9a603f7bd93ea64f3c5fa295a2f743575ba9c9a9fdb904af0f5fe2229bf2adf0630386e4a
+  checksum: 3ec416ea2be24042ebd677932a462cf16d2080393d8d7d0b1b3f5d6eaa4a7387aaf0eefb99193c0bfd29444857cf2e0c3ac89899e130550dc6c14ada8a46d25e
   languageName: node
   linkType: hard
 
@@ -321,24 +323,24 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "api.consumet.org@workspace:."
   dependencies:
-    "@consumet/extensions": "https://github.com/consumet/consumet.ts.git#commit=5d3286cabfcc1247727bf55504d072b918b927ff"
-    "@fastify/cors": ^8.3.0
+    "@consumet/extensions": "github:consumet/consumet.ts"
+    "@fastify/cors": ^8.2.0
     "@types/fastify-cors": ^2.1.0
-    "@types/node": ^18.17.14
-    "@types/ws": ^8.5.5
-    axios: ^0.27.2
+    "@types/node": ^18.11.17
+    "@types/ws": ^8.5.3
+    axios: ^1.0.0
     chalk: 4.1.2
     cheerio: 1.0.0-rc.12
     dotenv: ^16.3.1
     fastify: ^4.22.2
     fastify-cors: ^6.1.0
     ioredis: ^5.3.2
-    nodemon: 2.0.22
-    prettier: ^2.8.8
+    nodemon: 3.0.1
+    prettier: ^3.0.0
     reconnecting-websocket: ^4.4.0
     ts-node: ^10.9.1
     typescript: 5.2.2
-    ws: ^8.13.0
+    ws: ^8.8.1
   languageName: unknown
   linkType: soft
 
@@ -412,6 +414,17 @@ __metadata:
     follow-redirects: ^1.14.9
     form-data: ^4.0.0
   checksum: 38cb7540465fe8c4102850c4368053c21683af85c5fdf0ea619f9628abbcb59415d1e22ebc8a6390d2bbc9b58a9806c874f139767389c862ec9b772235f06854
+  languageName: node
+  linkType: hard
+
+"axios@npm:^1.0.0":
+  version: 1.6.4
+  resolution: "axios@npm:1.6.4"
+  dependencies:
+    follow-redirects: ^1.15.4
+    form-data: ^4.0.0
+    proxy-from-env: ^1.1.0
+  checksum: 48d8af8488ac7402fae312437c0189b3b609a472fca2f7fc796129c804d98520589b6317096eba8509711d49f855a3f620b6a24ff23acd73ac26433d0383b8f9
   languageName: node
   linkType: hard
 
@@ -982,6 +995,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"follow-redirects@npm:^1.15.4":
+  version: 1.15.4
+  resolution: "follow-redirects@npm:1.15.4"
+  peerDependenciesMeta:
+    debug:
+      optional: true
+  checksum: e178d1deff8b23d5d24ec3f7a94cde6e47d74d0dc649c35fc9857041267c12ec5d44650a0c5597ef83056ada9ea6ca0c30e7c4f97dbf07d035086be9e6a5b7b6
+  languageName: node
+  linkType: hard
+
 "form-data@npm:^4.0.0":
   version: 4.0.0
   resolution: "form-data@npm:4.0.0"
@@ -1508,12 +1531,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mnemonist@npm:0.39.5":
-  version: 0.39.5
-  resolution: "mnemonist@npm:0.39.5"
+"mnemonist@npm:0.39.6":
+  version: 0.39.6
+  resolution: "mnemonist@npm:0.39.6"
   dependencies:
     obliterator: ^2.0.1
-  checksum: 6669d687a434226924b2c84ee6eb7ce7d0f83dfc5caad8bcc164c73c0c11fb6d43cbe32636e710f068046f4b40a56c3032532554e93e02640aafc6ca3dd222e6
+  checksum: 10cb09aa33de92625d5004f541e6aaaab8ae4bb26c6917e8505189f2fc20b122c773a4c11639bb6b5bfdc6000645c2d210ecd47fb203176fe28c338443c466eb
   languageName: node
   linkType: hard
 
@@ -1558,23 +1581,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nodemon@npm:2.0.22":
-  version: 2.0.22
-  resolution: "nodemon@npm:2.0.22"
+"nodemon@npm:3.0.1":
+  version: 3.0.1
+  resolution: "nodemon@npm:3.0.1"
   dependencies:
     chokidar: ^3.5.2
     debug: ^3.2.7
     ignore-by-default: ^1.0.1
     minimatch: ^3.1.2
     pstree.remy: ^1.1.8
-    semver: ^5.7.1
-    simple-update-notifier: ^1.0.7
+    semver: ^7.5.3
+    simple-update-notifier: ^2.0.0
     supports-color: ^5.5.0
     touch: ^3.1.0
     undefsafe: ^2.0.5
   bin:
     nodemon: bin/nodemon.js
-  checksum: 9c987e139748f5b5c480c6c9080bdc97304ee7d29172b7b3da1a7db590b1323ad57b96346304e9b522b0e445c336dc393ccd3f9f45c73b20d476d2347890dcd0
+  checksum: 6a5d81855760d6617049eccce10ccf02bddb482dab13ceea5280ae595ec7004eee13e7b934368e3f46c37fe4d970342a8c38c99cae7e93e4d7a3ed1c1ecb6acf
   languageName: node
   linkType: hard
 
@@ -1731,12 +1754,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:^2.8.8":
-  version: 2.8.8
-  resolution: "prettier@npm:2.8.8"
+"prettier@npm:^3.0.0":
+  version: 3.1.1
+  resolution: "prettier@npm:3.1.1"
   bin:
-    prettier: bin-prettier.js
-  checksum: b49e409431bf129dd89238d64299ba80717b57ff5a6d1c1a8b1a28b590d998a34e083fa13573bc732bb8d2305becb4c9a4407f8486c81fa7d55100eb08263cf8
+    prettier: bin/prettier.cjs
+  checksum: e386855e3a1af86a748e16953f168be555ce66d6233f4ba54eb6449b88eb0c6b2ca79441b11eae6d28a7f9a5c96440ce50864b9d5f6356d331d39d6bb66c648e
   languageName: node
   linkType: hard
 
@@ -1785,6 +1808,13 @@ __metadata:
     forwarded: 0.2.0
     ipaddr.js: 1.9.1
   checksum: 29c6990ce9364648255454842f06f8c46fcd124d3e6d7c5066df44662de63cdc0bad032e9bf5a3d653ff72141cc7b6019873d685708ac8210c30458ad99f2b74
+  languageName: node
+  linkType: hard
+
+"proxy-from-env@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "proxy-from-env@npm:1.1.0"
+  checksum: ed7fcc2ba0a33404958e34d95d18638249a68c430e30fcb6c478497d72739ba64ce9810a24f53a7d921d0c065e5b78e3822759800698167256b04659366ca4d4
   languageName: node
   linkType: hard
 
@@ -1954,15 +1984,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semver@npm:^5.7.1":
-  version: 5.7.1
-  resolution: "semver@npm:5.7.1"
-  bin:
-    semver: ./bin/semver
-  checksum: 57fd0acfd0bac382ee87cd52cd0aaa5af086a7dc8d60379dfe65fea491fb2489b6016400813930ecd61fd0952dae75c115287a1b16c234b1550887117744dfaf
-  languageName: node
-  linkType: hard
-
 "semver@npm:^7.3.5":
   version: 7.5.1
   resolution: "semver@npm:7.5.1"
@@ -1974,7 +1995,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semver@npm:^7.5.0":
+"semver@npm:^7.5.0, semver@npm:^7.5.3":
   version: 7.5.4
   resolution: "semver@npm:7.5.4"
   dependencies:
@@ -1982,15 +2003,6 @@ __metadata:
   bin:
     semver: bin/semver.js
   checksum: 12d8ad952fa353b0995bf180cdac205a4068b759a140e5d3c608317098b3575ac2f1e09182206bf2eb26120e1c0ed8fb92c48c592f6099680de56bb071423ca3
-  languageName: node
-  linkType: hard
-
-"semver@npm:~7.0.0":
-  version: 7.0.0
-  resolution: "semver@npm:7.0.0"
-  bin:
-    semver: bin/semver.js
-  checksum: 272c11bf8d083274ef79fe40a81c55c184dff84dd58e3c325299d0927ba48cece1f020793d138382b85f89bab5002a35a5ba59a3a68a7eebbb597eb733838778
   languageName: node
   linkType: hard
 
@@ -2015,12 +2027,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"simple-update-notifier@npm:^1.0.7":
-  version: 1.1.0
-  resolution: "simple-update-notifier@npm:1.1.0"
+"simple-update-notifier@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "simple-update-notifier@npm:2.0.0"
   dependencies:
-    semver: ~7.0.0
-  checksum: 1012e9b6c504e559a948078177b3eedbb9d7e4d15878e2bda56314d08db609ca5da485be4ac9f838759faae8057935ee0246fcdf63f1233c86bd9fecb2a5544b
+    semver: ^7.5.3
+  checksum: 9ba00d38ce6a29682f64a46213834e4eb01634c2f52c813a9a7b8873ca49cdbb703696f3290f3b27dc067de6d9418b0b84bef22c3eb074acf352529b2d6c27fd
   languageName: node
   linkType: hard
 
@@ -2246,6 +2258,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"undici-types@npm:~5.26.4":
+  version: 5.26.5
+  resolution: "undici-types@npm:5.26.5"
+  checksum: 3192ef6f3fd5df652f2dc1cd782b49d6ff14dc98e5dced492aa8a8c65425227da5da6aafe22523c67f035a272c599bb89cfe803c1db6311e44bed3042fc25487
+  languageName: node
+  linkType: hard
+
 "unique-filename@npm:^2.0.0":
   version: 2.0.1
   resolution: "unique-filename@npm:2.0.1"
@@ -2321,9 +2340,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ws@npm:^8.13.0":
-  version: 8.13.0
-  resolution: "ws@npm:8.13.0"
+"ws@npm:^8.8.1":
+  version: 8.16.0
+  resolution: "ws@npm:8.16.0"
   peerDependencies:
     bufferutil: ^4.0.1
     utf-8-validate: ">=5.0.2"
@@ -2332,7 +2351,7 @@ __metadata:
       optional: true
     utf-8-validate:
       optional: true
-  checksum: 53e991bbf928faf5dc6efac9b8eb9ab6497c69feeb94f963d648b7a3530a720b19ec2e0ec037344257e05a4f35bd9ad04d9de6f289615ffb133282031b18c61c
+  checksum: feb3eecd2bae82fa8a8beef800290ce437d8b8063bdc69712725f21aef77c49cb2ff45c6e5e7fce622248f9c7abaee506bae0a9064067ffd6935460c7357321b
   languageName: node
   linkType: hard
 
